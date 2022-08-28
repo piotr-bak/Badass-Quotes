@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Badass Quotes</title>
+        <meta name="description" content="Awesome quote generator" />
+        <meta name="author" content="Piotr Bąk" />
+        <meta property="og:title" content="Badass Quotes" />
+        <meta property="og:description" content="Awesome quote generator" />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'%3E%3C!--! Font Awesome%0APro 6.1.2 by @fontawesome - https://fontawesome.com License -%0Ahttps://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons,%0AInc. --%3E%3Cg fill='white'%3E%3Cpath d='M129.1 480H128V384H352L245.2 448.1C210.4 468.1 170.6 480 129.1 480zM352%0A128H128V32H129.1C170.6 32 210.4 43.03 245.2 63.92L352 128zM104 128C130.2 128%0A153.4 140.6 168 160H456C525.3 160 591 182.7 635.2 241.6C641.6 250.1 641.6 261.9%0A635.2 270.4C591 329.3 525.3 352 456 352H168C153.4 371.4 130.2 384 104%0A384H96V480H80C53.49 480 32 458.5 32 432V384H40C17.91 384 0 366.1 0 344V168C0%0A145.9 17.89 128 39.96 128H32V80C32 53.49 53.49 32 80 32H96V128H104zM476.4%0A208C473.1 208 472 209.1 472 212.4V299.6C472 302 473.1 304 476.4 304C496.1 304%0A512 288.1 512 268.4V243.6C512 223.9 496.1 208 476.4 208z'/%3E%3C/g%3E%3C/svg%3E%0A"
+            type="image/svg+xml"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="preload"
+            as="style"
+            href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap"
+            rel="stylesheet"
+            media="print"
+            onload="this.media='all'"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="quote-container" id="quote-container">
+            <div class="quote-text">
+                <!-- Quote -->
+                <i class="fas fa-quote-left"></i>
+                <span id="quote"></span>
+                <!-- Author -->
+                <div class="quote-author">
+                    <span id="author"></span>
+                </div>
+                <!-- Buttons -->
+                <div class="button-container">
+                    <button
+                        class="twitter-button"
+                        id="twitter"
+                        title="Tweet This!"
+                    >
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button id="next-quote">Show next one</button>
+                </div>
+            </div>
+        </div>
+        <!-- Spinner (to be displayed on load) -->
+        <div class="spinner" id="spinner"></div>
+        <!-- script -->
+        <script src="script.js"></script>
+    </body>
+</html>
